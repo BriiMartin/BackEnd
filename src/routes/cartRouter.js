@@ -21,8 +21,6 @@ cartRouter.post("/", async (req, res) => {
   }
 });
 
-/* La ruta **GET /:cid** listará los productos del carrito con el **cid** proporcionado. */
-
 cartRouter.get("/:cid", async (req, res) => {
   try {
     const cart = await CartManager.getCart(cartManager.path);
@@ -37,11 +35,6 @@ cartRouter.get("/:cid", async (req, res) => {
     return res.status(500).json({ error: "Error interno del servidor" });
   }
 });
-
-/* La ruta POST /:cid/product/:pid agregará un producto al arreglo products del carrito, bajo el formato:
-  
-product: solo debe contener el id del producto.
-quantity: número de ejemplares del producto (se agrega de uno en uno). */
 
 cartRouter.post("/:cid/product/:pid", async (req, res) => {
   try {
