@@ -1,4 +1,4 @@
-<h1>**PrimeraPreEntrega BACKEND Brisa Martin**</h1>
+<h1> 💻PrimeraPreEntrega BACKEND Brisa Martin💻 </h1>
 
 
-Bienvenidos a mi repositorio 🙌
+Bienvenidos a mi repositorio, disfruten 💖
